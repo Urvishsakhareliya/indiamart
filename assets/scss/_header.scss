@@ -1,0 +1,138 @@
+/* Top Header */
+header {
+  // height: 50px;
+  .top-header {
+    /* height: 50px; */
+    background-color: $color-primary;
+    color: $color-lightBlue;
+    .nav-ul {
+      padding: 10px 0;
+      grid-gap: 20px;
+      grid-template-columns: 58% auto;
+
+      .left-nav {
+        // width: 50%;
+        grid-template-columns: 170px auto;
+        grid-gap: 20px;
+        .logo-li {
+          width: 170px;
+
+          .nav-logo,
+          .nav-logo img {
+            max-height: 40px;
+          }
+        }
+
+        .nav-search {
+          // width: 30%;
+          grid-template-columns: 140px auto 140px;
+          grid-gap: 16px;
+          #cit-drop {
+            width: 100%;
+            border-radius: 50px;
+            border: 1px solid $color-lightBlue;
+            padding: 4px 10px;
+            position: relative;
+            grid-gap: 8px;
+
+            .ri-map-pin-fill {
+              color: $color-lightBlue;
+            }
+
+            .ri-arrow-down-s-fill {
+              color: $color-lightBlue;
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+              font-size: 20px;
+            }
+          }
+
+          #searchBar {
+            position: relative;
+            input {
+              border: 1px solid $color-lightBlue;
+              border-radius: 50px;
+              width: 100%;
+              height: 100%;
+              outline: none;
+              padding: 0 40px;
+              background-color: transparent;
+              color: $color-lightBlue;
+              font-size: 18px;
+
+              &::-webkit-search-cancel-button {
+                -webkit-appearance: none;
+              }
+            }
+            i {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 18px;
+              color: $color-lightBlue;
+              cursor: pointer;
+
+              &.ri-search-2-line {
+                left: 14px;
+              }
+
+              &.ri-mic-line {
+                right: 14px;
+              }
+            }
+          }
+
+          .getBestPrice {
+            width: 140px;
+            color: $color-primary;
+            border-radius: 50px;
+            font-weight: 600;
+            background-color: $color-lightBlue;
+            border: 1px solid $color-lightBlue;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+             &:hover{
+              background-color: transparent;
+              color: $color-lightBlue;
+
+             }
+          }
+        }
+      }
+
+      .right-ul {
+        .nav {
+          grid-gap: 20px;
+          .nav-link {
+            text-transform: capitalize;
+            color: $color-lightBlue;
+            padding: 5px 0;
+            transition: 0.4s;
+            position: relative;
+            &::after {
+              content: "";
+              width: 100%;
+              height: 3px;
+              border-radius: 10px;
+              position: absolute;
+              left: 50%;
+              bottom: -2px;
+              transform: translateX(-50%) scale(0);
+              background-color: $color-lightBlue;
+              transition: 0.4s;
+            }
+            &:hover {
+              color: $color-lightBlue;
+              &::after {
+                transform: translateX(-50%) scale(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

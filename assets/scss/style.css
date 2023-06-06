@@ -1,0 +1,282 @@
+/* ================ Fonts ================ */
+/* -------- Sintony & Poppins -------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sintony:wght@400;700&display=swap");
+/* sintony-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sintony";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sintony-v13-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* sintony-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sintony";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/sintony-v13-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/poppins-v20-latin-800.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+.img-fluid {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+/* Color vairable */
+/* ---------- Header ---------- */
+/* Top Header */
+header .top-header {
+  /* height: 50px; */
+  background-color: #003376;
+  color: #ECF2FF;
+}
+header .top-header .nav-ul {
+  padding: 10px 0;
+  grid-gap: 20px;
+  grid-template-columns: 58% auto;
+}
+header .top-header .nav-ul .left-nav {
+  grid-template-columns: 170px auto;
+  grid-gap: 20px;
+}
+header .top-header .nav-ul .left-nav .logo-li {
+  width: 170px;
+}
+header .top-header .nav-ul .left-nav .logo-li .nav-logo,
+header .top-header .nav-ul .left-nav .logo-li .nav-logo img {
+  max-height: 40px;
+}
+header .top-header .nav-ul .left-nav .nav-search {
+  grid-template-columns: 140px auto 140px;
+  grid-gap: 16px;
+}
+header .top-header .nav-ul .left-nav .nav-search #cit-drop {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #ECF2FF;
+  padding: 4px 10px;
+  position: relative;
+  grid-gap: 8px;
+}
+header .top-header .nav-ul .left-nav .nav-search #cit-drop .ri-map-pin-fill {
+  color: #ECF2FF;
+}
+header .top-header .nav-ul .left-nav .nav-search #cit-drop .ri-arrow-down-s-fill {
+  color: #ECF2FF;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+header .top-header .nav-ul .left-nav .nav-search #searchBar {
+  position: relative;
+}
+header .top-header .nav-ul .left-nav .nav-search #searchBar input {
+  border: 1px solid #ECF2FF;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 40px;
+  background-color: transparent;
+  color: #ECF2FF;
+  font-size: 18px;
+}
+header .top-header .nav-ul .left-nav .nav-search #searchBar input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+header .top-header .nav-ul .left-nav .nav-search #searchBar i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ECF2FF;
+  cursor: pointer;
+}
+header .top-header .nav-ul .left-nav .nav-search #searchBar i.ri-search-2-line {
+  left: 14px;
+}
+header .top-header .nav-ul .left-nav .nav-search #searchBar i.ri-mic-line {
+  right: 14px;
+}
+header .top-header .nav-ul .left-nav .nav-search .getBestPrice {
+  width: 140px;
+  color: #003376;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #ECF2FF;
+  border: 1px solid #ECF2FF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .top-header .nav-ul .left-nav .nav-search .getBestPrice:hover {
+  background-color: transparent;
+  color: #ECF2FF;
+}
+header .top-header .nav-ul .right-ul .nav {
+  grid-gap: 20px;
+}
+header .top-header .nav-ul .right-ul .nav .nav-link {
+  text-transform: capitalize;
+  color: #ECF2FF;
+  padding: 5px 0;
+  transition: 0.4s;
+  position: relative;
+}
+header .top-header .nav-ul .right-ul .nav .nav-link::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%) scale(0);
+  background-color: #ECF2FF;
+  transition: 0.4s;
+}
+header .top-header .nav-ul .right-ul .nav .nav-link:hover {
+  color: #ECF2FF;
+}
+header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
+  transform: translateX(-50%) scale(1);
+}
+
+/* ================ Page Css ================ */
+/* ================ Media Query ================ *//*# sourceMappingURL=style.css.map */
