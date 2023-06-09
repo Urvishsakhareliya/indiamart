@@ -1,0 +1,15 @@
+@mixin media($minWidth, $maxWidth) {
+  @media screen and (min-width: WidthPx($minWidth)) and (max-width: WidthPx($maxWidth)) {
+    @content;
+  }
+}
+
+@mixin mediaMax($maxWidth) {
+  @media screen and (max-width: WidthPx($maxWidth)) {
+    @content;
+  }
+}
+
+@function WidthPx($val) {
+  @return $val + "px";
+}

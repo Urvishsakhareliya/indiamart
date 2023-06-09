@@ -5,18 +5,23 @@
 
 /* ---------- Header ---------- */
 @import "header";
+@import "breadcrumb";
+@import "firstFold";
 /* ================ Page Css ================ */
 
 /* ================ Media Query ================ */
+@import "mediaQuery";
 
-@media screen and (min-width: 1600px) and (max-width: 1799px) {
-}
+ 
+ 
+// @media screen and (min-width: 1600px) and (max-width: 1799px) {
+// }
 
-@media screen and (min-width: 1400px) and (max-width: 1599px) {
-}
+// @media screen and (min-width: 1400px) and (max-width: 1599px) {
+// }
 
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-}
+// @media screen and (min-width: 1200px) and (max-width: 1399px) {
+// }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-}
+// @media screen and (min-width: 992px) and (max-width: 1199px) {
+// }

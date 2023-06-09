@@ -1,0 +1,26 @@
+// Breadcrumb
+.breadcrumbUl {
+  padding: 12px 0;
+  font-size: 14px;
+  .breadcrumbItem {
+    .breadcrumbLink {
+      color: $color-dark;
+      transition: 0.2s;
+      opacity: 0.6;
+      &:hover {
+        color: $color-orange;
+      }
+      &::before {
+        content: ">";
+        color: $color-dark;
+        margin: 0 8px;
+      }
+      &.active {
+        opacity: 1;
+      }
+    }
+    &:first-child .breadcrumbLink::before {
+      content: none;
+    }
+  }
+}

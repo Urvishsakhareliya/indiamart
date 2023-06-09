@@ -1,4 +1,5 @@
- 
+@import "mediaQuery";
+
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +36,7 @@ a {
 }
 
 .container {
-  margin: 0 100px;
+  margin: 0 80px;
 }
 
 .img-fluid {
@@ -73,4 +74,27 @@ a {
 
 .justify-content-end {
   justify-content: end;
+}
+
+ 
+@include media(1400, 1600) {
+  .container {
+    margin: 0 70px;
+  }
+}
+@include media(1200, 1399) {
+  body { 
+    font-size: 14px; 
+  }
+  .container {
+    margin: 0 50px;
+  }
+}
+@include media(992, 1199) {
+  body { 
+    font-size: 14px; 
+  }
+  .container {
+    margin: 0 30px;
+  }
 }

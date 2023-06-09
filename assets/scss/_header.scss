@@ -1,21 +1,42 @@
 /* Top Header */
+@import "mediaQuery";
 header {
-  // height: 50px;
+  height: 60px;
   .top-header {
-    /* height: 50px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: $color-primary;
     color: $color-lightBlue;
+
     .nav-ul {
       padding: 10px 0;
       grid-gap: 20px;
-      grid-template-columns: 58% auto;
+      grid-template-columns: 70% auto;
+      @include media(1200, 1399) {
+        grid-gap: 15px;
+        grid-template-columns: 65% auto;
+      }
+      @include media(992, 1199) {
+        grid-gap: 10px;
+        grid-template-columns: 60% auto;
+      }
 
       .left-nav {
         // width: 50%;
         grid-template-columns: 170px auto;
         grid-gap: 20px;
+        @include media(1200, 1399) {
+          grid-template-columns: 140px auto;
+          grid-gap: 15px;
+        }
+        @include media(992, 1199) {
+          grid-template-columns: 40px auto;
+          grid-gap: 10px;
+        }
         .logo-li {
-          width: 170px;
+          // width: 170px;
 
           .nav-logo,
           .nav-logo img {
@@ -27,6 +48,14 @@ header {
           // width: 30%;
           grid-template-columns: 140px auto 140px;
           grid-gap: 16px;
+          @include media(1200, 1399) {
+            grid-template-columns: 110px auto 120px;
+            grid-gap: 10px;
+          }
+          @include media(992, 1199) {
+            grid-template-columns: 100px auto 114px;
+            grid-gap: 10px;
+          }
           #cit-drop {
             width: 100%;
             border-radius: 50px;
@@ -46,6 +75,13 @@ header {
               right: 10px;
               transform: translateY(-50%);
               font-size: 20px;
+
+              @include media(1200, 1399) {
+              right: 8px;
+              }
+              @include media(992, 1199) {
+              right: 8px;
+              }
             }
           }
 
@@ -61,6 +97,12 @@ header {
               background-color: transparent;
               color: $color-lightBlue;
               font-size: 18px;
+              @include media(1200, 1399) {
+                padding: 0 30px;
+              }
+              @include media(992, 1199) {
+                padding: 0 30px;
+              }
 
               &::-webkit-search-cancel-button {
                 -webkit-appearance: none;
@@ -73,19 +115,36 @@ header {
               font-size: 18px;
               color: $color-lightBlue;
               cursor: pointer;
+              @include media(1200, 1399) {
+                font-size: 16px;
+              }
+                @include media(992, 1199) {
+                  font-size: 14px;
+                }
 
               &.ri-search-2-line {
                 left: 14px;
+                @include media(1200, 1399) {
+                  left: 10px;
+                }
+                @include media(992, 1199) {
+                  left: 8px;
+                }
               }
 
               &.ri-mic-line {
                 right: 14px;
+                @include media(1200, 1399) {
+                  right: 10px;
+                }
+                @include media(992, 1199) {
+                  right: 8px;
+                }
               }
             }
           }
 
           .getBestPrice {
-            width: 140px;
             color: $color-primary;
             border-radius: 50px;
             font-weight: 600;
@@ -94,11 +153,17 @@ header {
             font-size: 16px;
             cursor: pointer;
             transition: 0.3s;
-             &:hover{
+            &:hover {
               background-color: transparent;
               color: $color-lightBlue;
+            }
 
-             }
+            @include media(1200, 1399) {
+              font-size: 14px;
+            }
+            @include media(992, 1199) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -136,3 +201,8 @@ header {
     }
   }
 }
+
+// https://www.enverstudio.com/hiring
+
+// https://dribbble.com/shots/20285141-Tokogadget-Gadget-Marketplace-Website
+// https://dribbble.com/shots/19766476-Website-Marketplace-Concept-Product-Details

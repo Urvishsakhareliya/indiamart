@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/scss/style.css" />
   </head>
   <body>
+    <!-- Start Header -->
     <header>
       <nav class="top-header">
         <ul class="container nav-ul d-grid">
@@ -17,11 +18,14 @@
             <div class="logo-li d-grid align-content-center">
               <a
                 href="https://www.indiamart.com/"
-                class="nav-logo d-inline-block"
+                class="nav-logo d-grid align-content-center"
               >
                 <img
-                  src="./assets/image/indiamartLogo.png"
-                  alt=""
+                  alt="indiamart logo"
+                  srcset="
+                    ./assets/image/indiamartLogo-icon.png 1199w,
+                    ./assets/image/indiamartLogo.png      1200w
+                  "
                   class="img-fluid"
                 />
               </a>
@@ -66,5 +70,64 @@
         </ul>
       </nav>
     </header>
+    <!-- End Header -->
+
+    <div class="container">
+      <!-- Start Breadcrumb -->
+      <section class="breadcrumb-sec">
+        <ul class="breadcrumbUl d-flex">
+          <li class="breadcrumbItem">
+            <a href="#" class="breadcrumbLink">IndiaMART</a>
+          </li>
+          <li class="breadcrumbItem">
+            <a href="#" class="breadcrumbLink">Face Mask & Medical PPE Kits</a>
+          </li>
+          <li class="breadcrumbItem">
+            <a href="#" class="breadcrumbLink">Face Mask</a>
+          </li>
+          <li class="breadcrumbItem">
+            <a href="#" class="breadcrumbLink active">Reusable Face Mask</a>
+          </li>
+        </ul>
+      </section>
+      <!-- End Breadcrumb -->
+    </div>
+
+    <!-- End First Fold -->
+    <section class="container FirstFold">
+      <div class="productView">
+        <div class="productImage">
+          <div class="mainImage">
+            <img src="assets/image/image-1.webp" alt="" class="img-fluid" id="ProductMainImage"/>
+          </div>
+          <ul class="imageSlider">
+            <li class="imageItem">
+              <img src="assets/image/image-1.webp" alt=""  />
+            </li>
+            <li class="imageItem">
+              <img src="assets/image/image-2.webp" alt=""  />
+            </li>
+            <li class="imageItem">
+              <img src="assets/image/image-3.webp" alt=""  />
+            </li>
+            <li class="imageItem">
+              <img src="assets/image/image-4.webp" alt=""  />
+            </li>
+            <li class="imageItem">
+              <img src="assets/image/image-5.webp" alt=""  />
+            </li>
+            <li class="imageItem">
+              <img src="assets/image/image-6.webp" alt=""  />
+            </li>
+            <li class="imageItem">
+              <img src="assets/image/image-7.webp" alt=""  />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End First Fold -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
