@@ -1,4 +1,5 @@
-/* ================ Fonts ================ */
+@charset "UTF-8";
+/* Color vairable */ /* ================ Fonts ================ */
 /* -------- Sintony & Poppins -------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sintony:wght@400;700&display=swap");
 /* sintony-regular - latin */
@@ -91,6 +92,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
+  color: #646464;
 }
 
 .row {
@@ -132,6 +134,10 @@ a {
   display: inline-block;
 }
 
+.d-inline-flex {
+  display: inline-flex;
+}
+
 .d-flex {
   display: flex;
 }
@@ -156,6 +162,18 @@ a {
   justify-content: end;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   .container {
     margin: 0 70px;
@@ -177,19 +195,40 @@ a {
     margin: 0 30px;
   }
 }
-/* Color vairable */
 /* ---------- Header ---------- */
 /* Top Header */
 header {
   height: 60px;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header {
+    height: 52px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  header {
+    height: 54px;
+  }
+}
 header .top-header {
+  height: 60px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
   background-color: #003376;
-  color: #ECF2FF;
+  color: #ecf2ff;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header .top-header {
+    height: 52px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  header .top-header {
+    height: 54px;
+  }
 }
 header .top-header .nav-ul {
   padding: 10px 0;
@@ -247,16 +286,16 @@ header .top-header .nav-ul .left-nav .nav-search {
 header .top-header .nav-ul .left-nav .nav-search #cit-drop {
   width: 100%;
   border-radius: 50px;
-  border: 1px solid #ECF2FF;
+  border: 1px solid #ecf2ff;
   padding: 4px 10px;
   position: relative;
   grid-gap: 8px;
 }
 header .top-header .nav-ul .left-nav .nav-search #cit-drop .ri-map-pin-fill {
-  color: #ECF2FF;
+  color: #ecf2ff;
 }
 header .top-header .nav-ul .left-nav .nav-search #cit-drop .ri-arrow-down-s-fill {
-  color: #ECF2FF;
+  color: #ecf2ff;
   position: absolute;
   top: 50%;
   right: 10px;
@@ -277,14 +316,14 @@ header .top-header .nav-ul .left-nav .nav-search #searchBar {
   position: relative;
 }
 header .top-header .nav-ul .left-nav .nav-search #searchBar input {
-  border: 1px solid #ECF2FF;
+  border: 1px solid #ecf2ff;
   border-radius: 50px;
   width: 100%;
   height: 100%;
   outline: none;
   padding: 0 40px;
   background-color: transparent;
-  color: #ECF2FF;
+  color: #ecf2ff;
   font-size: 18px;
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -305,7 +344,7 @@ header .top-header .nav-ul .left-nav .nav-search #searchBar i {
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
-  color: #ECF2FF;
+  color: #ecf2ff;
   cursor: pointer;
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -348,15 +387,15 @@ header .top-header .nav-ul .left-nav .nav-search .getBestPrice {
   color: #003376;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #ECF2FF;
-  border: 1px solid #ECF2FF;
+  background-color: #ecf2ff;
+  border: 1px solid #ecf2ff;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
 }
 header .top-header .nav-ul .left-nav .nav-search .getBestPrice:hover {
   background-color: transparent;
-  color: #ECF2FF;
+  color: #ecf2ff;
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   header .top-header .nav-ul .left-nav .nav-search .getBestPrice {
@@ -373,7 +412,7 @@ header .top-header .nav-ul .right-ul .nav {
 }
 header .top-header .nav-ul .right-ul .nav .nav-link {
   text-transform: capitalize;
-  color: #ECF2FF;
+  color: #ecf2ff;
   padding: 5px 0;
   transition: 0.4s;
   position: relative;
@@ -387,11 +426,11 @@ header .top-header .nav-ul .right-ul .nav .nav-link::after {
   left: 50%;
   bottom: -2px;
   transform: translateX(-50%) scale(0);
-  background-color: #ECF2FF;
+  background-color: #ecf2ff;
   transition: 0.4s;
 }
 header .top-header .nav-ul .right-ul .nav .nav-link:hover {
-  color: #ECF2FF;
+  color: #ecf2ff;
 }
 header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   transform: translateX(-50%) scale(1);
@@ -400,6 +439,12 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .breadcrumbUl {
   padding: 12px 0;
   font-size: 14px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumbUl {
+    padding: 10px 0;
+    font-size: 13px;
+  }
 }
 .breadcrumbUl .breadcrumbItem .breadcrumbLink {
   color: #141a23;
@@ -424,14 +469,28 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .productView {
   margin-bottom: 200px;
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 25% 50% auto;
+  gap: 20px;
 }
-.productView .productImage {
-  display: grid;
+@media screen and (max-width: 1399px) {
+  .productView {
+    gap: 16px;
+  }
+}
+.productView .productImage .pro_image {
+  position: sticky;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
+@media screen and (max-width: 1399px) {
+  .productView .productImage .pro_image {
+    top: 64px;
+  }
+}
 .productView .productImage .mainImage {
-  background-color: #ECF2FF;
+  background-color: #ecf2ff;
   border-radius: 8px;
   border: 1px solid #acacac;
   aspect-ratio: 1;
@@ -439,6 +498,22 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+.productView .productImage .mainImage #ProductMainImage {
+  position: relative;
+  z-index: 1;
+}
+.productView .productImage .mainImage .fix-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: blur(100px);
+  z-index: -1;
 }
 .productView .productImage .imageSlider {
   display: flex;
@@ -450,7 +525,7 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   min-width: 20%;
   border-radius: 8px;
   aspect-ratio: 1;
-  background-color: #ECF2FF;
+  background-color: #ecf2ff;
   border: 1px solid #acacac;
   overflow: hidden;
 }
@@ -458,21 +533,135 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   border-color: #ee6c4d;
 }
 .productView .productImage .imageSlider .imageItem img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
 }
 .productView .productImage .imageSlider::-webkit-scrollbar {
   height: 6px;
 }
 .productView .productImage .imageSlider::-webkit-scrollbar-track {
-  background-color: #ECF2FF;
+  background-color: #ecf2ff;
   border-radius: 10px;
 }
 .productView .productImage .imageSlider::-webkit-scrollbar-thumb {
   background-color: #ee6c4d;
   border-radius: 10px;
+}
+.productView .productDetails .product_Name {
+  color: #141a23;
+  font-family: "Sintony", sans-serif;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.productView .productDetails .price_glp {
+  margin-bottom: 10px;
+  gap: 10px;
+  align-items: end;
+}
+.productView .productDetails .price_glp .product_price {
+  font-family: "Sintony", sans-serif;
+  color: #141a23;
+  font-size: 26px;
+  transition: 0.3s;
+}
+.productView .productDetails .price_glp .product_price:hover {
+  color: #ea4923;
+}
+.productView .productDetails .price_glp .product_price::before {
+  content: "₹";
+  margin-right: 6px;
+}
+.productView .productDetails .price_glp .letest_price {
+  cursor: pointer;
+  font-size: 18px;
+  color: #ee6c4d;
+  font-weight: 500;
+}
+.productView .productDetails .price_glp .letest_price:hover {
+  color: #003376;
+}
+.productView .productDetails .pro_description .pro_desc_Table {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #b1b1b1;
+}
+.productView .productDetails .pro_description .pro_desc_Table table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.productView .productDetails .pro_description .pro_desc_Table table th,
+.productView .productDetails .pro_description .pro_desc_Table table td {
+  padding: 8px;
+}
+.productView .productDetails .pro_description .pro_desc_Table table tr {
+  border-top: 1px solid #b1b1b1;
+}
+.productView .productDetails .pro_description .pro_desc_Table table tr:first-child {
+  border-top: none;
+}
+.productView .productDetails .pro_description .pro_desc_Table table tr th {
+  width: 35%;
+  border-right: 1px solid #b1b1b1;
+  font-weight: 500;
+}
+.productView .productDetails .pro_description .pro_desc_p {
+  margin: 10px 0 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.productView .productDetails .pro_description .View_Details {
+  font-weight: 600;
+  color: #003376;
+  gap: 4px;
+  transition: 0.3s;
+}
+.productView .productDetails .pro_description .View_Details:hover {
+  color: #ee6c4d;
+  gap: 10px;
+}
+.productView .productDetails .pro_description .get_latest_price button {
+  width: 300px;
+  padding: 15px 20px;
+  font-family: "Sintony", sans-serif;
+  border-radius: 10px;
+  border: 1px solid #003376;
+  background-color: #003376;
+  color: #ecf2ff;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.productView .productDetails .pro_description .get_latest_price button p {
+  font-weight: 600;
+  font-size: 20px;
+}
+.productView .productDetails .pro_description .get_latest_price button span {
+  font-size: 14px;
+}
+.productView .productDetails .pro_description .get_latest_price button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #ecf2ff;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.productView .productDetails .pro_description .get_latest_price button:hover {
+  color: #003376;
+}
+.productView .productDetails .pro_description .get_latest_price button:hover::after {
+  width: 400px;
+  height: 400px;
 }
 
 /* ================ Page Css ================ */

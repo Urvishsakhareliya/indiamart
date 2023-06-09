@@ -1,5 +1,5 @@
-$('.imageItem').click(function () {
-    var src =$(this).find('img').attr('src')
-     
-    $('#ProductMainImage').attr('src',src)
+$(".imageItem").click(function () {
+  var src = $(this).find("img").attr("src");
+
+  $(".coverImage").attr("src", src);
 });

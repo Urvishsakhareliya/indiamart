@@ -1,0 +1,14 @@
+@mixin line_clamp($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+@mixin themeBtn($radius) {
+  font-family: $text-sintony;
+  border-radius: $radius;
+  border: 1px solid $color-primary;
+  background-color: $color-primary;
+  color: $color-white;
+}

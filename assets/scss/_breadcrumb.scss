@@ -2,6 +2,10 @@
 .breadcrumbUl {
   padding: 12px 0;
   font-size: 14px;
+  @include media(992, 1199) {
+    padding: 10px 0;
+    font-size: 13px;
+  }
   .breadcrumbItem {
     .breadcrumbLink {
       color: $color-dark;

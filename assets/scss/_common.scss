@@ -7,10 +7,11 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: $text-poppins;
   //  font-family: 'Sintony', sans-serif;
   font-size: 16px;
   overflow-x: hidden;
+  color: $color-grey;
 }
 
 .row {
@@ -51,6 +52,9 @@ a {
 .d-inline-block {
   display: inline-block;
 }
+.d-inline-flex {
+  display: inline-flex;
+}
 
 .d-flex {
   display: flex;
@@ -76,23 +80,34 @@ a {
   justify-content: end;
 }
 
- 
+.pointer{
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mt10{
+  margin-top: 10px;
+}
+
 @include media(1400, 1600) {
   .container {
     margin: 0 70px;
   }
 }
 @include media(1200, 1399) {
-  body { 
-    font-size: 14px; 
+  body {
+    font-size: 14px;
   }
   .container {
     margin: 0 50px;
   }
 }
 @include media(992, 1199) {
-  body { 
-    font-size: 14px; 
+  body {
+    font-size: 14px;
   }
   .container {
     margin: 0 30px;
