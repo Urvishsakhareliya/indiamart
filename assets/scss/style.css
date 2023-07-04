@@ -528,6 +528,9 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   background-color: #ecf2ff;
   border: 1px solid #acacac;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .productView .productImage .imageSlider .imageItem.active {
   border-color: #ee6c4d;

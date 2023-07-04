@@ -60,6 +60,9 @@
         background-color: $color-lightBlue;
         border: 1px solid $color-lightDark;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         // padding: 10px;
         &.active {
           border-color: $color-orange;
@@ -212,8 +215,8 @@
   }
 
   // product_Company_card
-  .product_Company_card{
-    .Company_card{
+  .product_Company_card {
+    .Company_card {
       border: 1px solid lighten($color-grey, 30);
     }
   }
