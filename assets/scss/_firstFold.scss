@@ -1,4 +1,4 @@
-@function erre($value) {
+@function imageItem($value) {
   @return ($value / 5);
 }
 
@@ -54,7 +54,7 @@
       overflow-x: scroll;
       padding-bottom: 10px;
       .imageItem {
-        min-width: erre(100%);
+        min-width: imageItem(100%);
         border-radius: 8px;
         aspect-ratio: 1;
         background-color: $color-lightBlue;
@@ -109,7 +109,7 @@
           margin-right: 6px;
         }
       }
-      .letest_price {
+      .latest_price {
         cursor: pointer;
         font-size: 18px;
         color: $color-orange;
@@ -208,6 +208,13 @@
           height: 400px;
         }
       }
+    }
+  }
+
+  // product_Company_card
+  .product_Company_card{
+    .Company_card{
+      border: 1px solid lighten($color-grey, 30);
     }
   }
 }

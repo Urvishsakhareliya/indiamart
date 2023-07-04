@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Color vairable */ /* ================ Fonts ================ */
+/* Color variable */ /* ================ Fonts ================ */
 /* -------- Sintony & Poppins -------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sintony:wght@400;700&display=swap");
 /* sintony-regular - latin */
@@ -571,13 +571,13 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   content: "₹";
   margin-right: 6px;
 }
-.productView .productDetails .price_glp .letest_price {
+.productView .productDetails .price_glp .latest_price {
   cursor: pointer;
   font-size: 18px;
   color: #ee6c4d;
   font-weight: 500;
 }
-.productView .productDetails .price_glp .letest_price:hover {
+.productView .productDetails .price_glp .latest_price:hover {
   color: #003376;
 }
 .productView .productDetails .pro_description .pro_desc_Table {
@@ -662,6 +662,9 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .productView .productDetails .pro_description .get_latest_price button:hover::after {
   width: 400px;
   height: 400px;
+}
+.productView .product_Company_card .Company_card {
+  border: 1px solid #b1b1b1;
 }
 
 /* ================ Page Css ================ */
