@@ -218,6 +218,99 @@
   .product_Company_card {
     .Company_card {
       border: 1px solid lighten($color-grey, 30);
+      padding: 10px;
+      border-radius: 8px;
+      .hrLine {
+        @include hrLine($color-lightDark, 15px);
+      }
+      .company_name {
+        color: $color-dark;
+      }
+
+      .logo_Address {
+        grid-template-columns: 100px auto;
+        gap: 14px;
+
+        .logo_div {
+          padding: 5px;
+          border-radius: 8px;
+          border: 1px solid $color-lightDark;
+        }
+
+        .Address_rate_Gst {
+          gap: 5px;
+          .Address {
+            grid-template-columns: 15px auto;
+            gap: 8px;
+            color: $color-dark;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            p {
+              @include line_clamp(2);
+            }
+          }
+
+          .rate_star {
+            gap: 10px;
+            .rate {
+              color: $color-dark;
+              &:after {
+                content: "/5";
+                color: $color-grey;
+                font-size: 16px;
+              }
+            }
+
+            .star {
+              font-size: 20px;
+              color: $color-orange;
+            }
+          }
+          .gst {
+            @extend .Address;
+          }
+        }
+      }
+    }
+
+    .company_tags {
+      flex-wrap: wrap;
+      gap: 8px 0;
+      .tag_item {
+        $width: 20px;
+        min-width: 49%;
+        grid-template-columns: $width auto;
+        gap: 10px;
+        align-items: center;
+
+        .icon {
+          border-radius: 50%;
+          overflow: hidden;
+          height: $width;
+          width: $width;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .View_mobile_number {
+      max-width: 300px;
+      margin: 0 auto;
+      height: 56px;
+      background-color: lighten($color-dark, 86);
+      border-radius: 8px;
+      .vmn_text {
+        gap: 8px;
+        color: $color-dark;
+      }
+      .ResponseRate {
+        margin-top: -2px;
+      }
     }
   }
 }

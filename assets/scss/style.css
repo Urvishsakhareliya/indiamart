@@ -126,6 +126,14 @@ a {
   max-width: 100%;
 }
 
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
 .d-block {
   display: block;
 }
@@ -158,6 +166,10 @@ a {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-content-end {
   justify-content: end;
 }
@@ -172,6 +184,18 @@ a {
 
 .mt10 {
   margin-top: 10px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-medium {
+  font-weight: 500;
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
@@ -668,6 +692,95 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 }
 .productView .product_Company_card .Company_card {
   border: 1px solid #b1b1b1;
+  padding: 10px;
+  border-radius: 8px;
+}
+.productView .product_Company_card .Company_card .hrLine {
+  height: 1px;
+  width: 100%;
+  background-color: #acacac;
+  margin: 15px 0;
+}
+.productView .product_Company_card .Company_card .company_name {
+  color: #141a23;
+}
+.productView .product_Company_card .Company_card .logo_Address {
+  grid-template-columns: 100px auto;
+  gap: 14px;
+}
+.productView .product_Company_card .Company_card .logo_Address .logo_div {
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid #acacac;
+}
+.productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst {
+  gap: 5px;
+}
+.productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .Address, .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .gst {
+  grid-template-columns: 15px auto;
+  gap: 8px;
+  color: #141a23;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .Address p, .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .gst p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star {
+  gap: 10px;
+}
+.productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star .rate {
+  color: #141a23;
+}
+.productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star .rate:after {
+  content: "/5";
+  color: #646464;
+  font-size: 16px;
+}
+.productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star .star {
+  font-size: 20px;
+  color: #ee6c4d;
+}
+.productView .product_Company_card .company_tags {
+  flex-wrap: wrap;
+  gap: 8px 0;
+}
+.productView .product_Company_card .company_tags .tag_item {
+  min-width: 49%;
+  grid-template-columns: 20px auto;
+  gap: 10px;
+  align-items: center;
+}
+.productView .product_Company_card .company_tags .tag_item .icon {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 20px;
+  width: 20px;
+}
+.productView .product_Company_card .company_tags .tag_item .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.productView .product_Company_card .View_mobile_number {
+  max-width: 300px;
+  margin: 0 auto;
+  height: 56px;
+  background-color: #f5f6f9;
+  border-radius: 8px;
+}
+.productView .product_Company_card .View_mobile_number .vmn_text {
+  gap: 8px;
+  color: #141a23;
+}
+.productView .product_Company_card .View_mobile_number .ResponseRate {
+  margin-top: -2px;
 }
 
 /* ================ Page Css ================ */

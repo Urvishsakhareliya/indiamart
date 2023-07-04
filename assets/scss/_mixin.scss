@@ -12,3 +12,9 @@
   background-color: $color-primary;
   color: $color-white;
 }
+@mixin hrLine($color, $mt) {
+  height: 1px;
+  width: 100%;
+  background-color: $color;
+  margin: $mt 0;
+}

@@ -44,6 +44,12 @@ a {
   max-height: 100%;
   max-width: 100%;
 }
+.fs12 {
+  font-size: 12px;
+}
+.fs14 {
+  font-size: 14px;
+}
 
 .d-block {
   display: block;
@@ -75,21 +81,35 @@ a {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 
 .justify-content-end {
   justify-content: end;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.mt10{
+.mt10 {
   margin-top: 10px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+.fw-medium {
+  font-weight: 500;
 }
 
 @include media(1400, 1600) {
@@ -113,3 +133,18 @@ a {
     margin: 0 30px;
   }
 }
+
+// Premier Plylam Marketing Company
+// Vishwakarma Industrial Area, Jaipur, Rajasthan
+// 4.4/5 ★★★★★
+// ★★★★★
+//  (60)
+// GST- 08AAPFP7479P1ZY
+// Leading Supplier
+// TrustSEAL Verified
+// Distributor / Channel Partner
+// Company Video
+//  View Mobile Number
+// 70% Response Rate
+// Contact Supplier
+// View More Sellers
