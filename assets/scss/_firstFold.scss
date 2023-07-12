@@ -1,14 +1,26 @@
-@function imageItem($value) {
-  @return ($value / 5);
+@function imageItem($value, $item) {
+  @return ($value / $item);
 }
 
 .productView {
   margin-bottom: 200px;
   display: grid;
-  grid-template-columns: 25% 50% auto;
+  grid-template-columns: 25% auto 25%;
   gap: 20px;
-  @include mediaMax(1399) {
-    gap: 16px;
+  @include media(1400, 1699) {
+    grid-template-columns: 28% auto 28%;
+  }
+  @include media(1200, 1399) {
+    grid-template-columns: 28% auto 28%;
+    gap: 14px;
+  }
+  @include media(992, 1199) {
+    grid-template-columns: 30% auto 28%;
+    gap: 8px;
+  }
+  @include media(720, 991) {
+    grid-template-columns: 50% auto 28%;
+    gap: 8px;
   }
 
   .productImage {
@@ -54,7 +66,7 @@
       overflow-x: scroll;
       padding-bottom: 10px;
       .imageItem {
-        min-width: imageItem(100%);
+        min-width: imageItem(100%, 5);
         border-radius: 8px;
         aspect-ratio: 1;
         background-color: $color-lightBlue;
@@ -63,6 +75,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include media(1200, 1399) {
+          min-width: imageItem(100%, 4.5);
+        }
+        @include media(992, 1199) {
+          min-width: imageItem(100%, 4.5);
+        }
         // padding: 10px;
         &.active {
           border-color: $color-orange;
@@ -93,6 +111,12 @@
       font-family: $text-sintony;
       font-size: 20px;
       margin-bottom: 4px;
+      @include media(1200, 1399) {
+        font-size: 18px;
+      }
+      @include media(992, 1199) {
+        font-size: 16px;
+      }
     }
     .price_glp {
       margin-bottom: 10px;
@@ -104,6 +128,12 @@
         color: $color-dark;
         font-size: 26px;
         transition: 0.3s;
+        @include media(1200, 1399) {
+          font-size: 24px;
+        }
+        @include media(992, 1199) {
+          font-size: 20px;
+        }
         &:hover {
           color: darken($color-orange, 9);
         }
@@ -117,6 +147,12 @@
         font-size: 18px;
         color: $color-orange;
         font-weight: 500;
+        @include media(1200, 1399) {
+          font-size: 16px;
+        }
+        @include media(992, 1199) {
+          font-size: 14px;
+        }
         &:hover {
           color: $color-primary;
         }
@@ -142,6 +178,9 @@
           th,
           td {
             padding: 8px;
+            @include media(992, 1199) {
+              padding: 4px 6px;
+            }
           }
           tr {
             border-top: 1px solid lighten($color-grey, 30);
@@ -181,13 +220,23 @@
         z-index: 5;
         overflow: hidden;
         transition: 0.5s;
+        @include media(992, 1199) {
+          padding: 10px 20px;
+          width: 250px;
+        }
 
         p {
           font-weight: 600;
           font-size: 20px;
+          @include media(992, 1199) {
+            font-size: 18px;
+          }
         }
         span {
           font-size: 14px;
+          @include media(992, 1199) {
+            font-size: 12px;
+          }
         }
 
         &::after {
@@ -220,8 +269,18 @@
       border: 1px solid lighten($color-grey, 30);
       padding: 10px;
       border-radius: 8px;
+      @include media(992, 1199) {
+        padding: 8px;
+        font-size: 12px;
+      }
       .hrLine {
         @include hrLine($color-lightDark, 15px);
+        @include media(1200, 1399) {
+          @include hrLine($color-lightDark, 12px);
+        }
+        @include media(992, 1199) {
+          @include hrLine($color-lightDark, 12px);
+        }
       }
       .company_name {
         color: $color-dark;
@@ -231,6 +290,14 @@
         grid-template-columns: 100px auto;
         gap: 14px;
 
+        @include media(1200, 1699) {
+          grid-template-columns: 80px auto;
+          gap: 12px;
+        }
+        @include media(992, 1199) {
+          grid-template-columns: 70px auto;
+          gap: 8px;
+        }
         .logo_div {
           padding: 5px;
           border-radius: 8px;
@@ -249,22 +316,34 @@
             p {
               @include line_clamp(2);
             }
+            @include media(992, 1199) {
+              font-size: 12px;
+            }
           }
 
           .rate_star {
             gap: 10px;
+            @include media(992, 1199) {
+              gap: 6px;
+            }
             .rate {
               color: $color-dark;
               &:after {
                 content: "/5";
                 color: $color-grey;
                 font-size: 16px;
+                @include media(992, 1199) {
+                  font-size: 12px;
+                }
               }
             }
 
             .star {
               font-size: 20px;
               color: $color-orange;
+              @include media(992, 1199) {
+                font-size: 16px;
+              }
             }
           }
           .gst {
@@ -283,7 +362,17 @@
         grid-template-columns: $width auto;
         gap: 10px;
         align-items: center;
-
+        @include media(1200, 1399) {
+          $width: 16px;
+          grid-template-columns: $width auto;
+          gap: 6px;
+        }
+        @include media(992, 1199) {
+          $width: 16px;
+          grid-template-columns: $width auto;
+          gap: 4px;
+          font-size: 12px;
+        }
         .icon {
           border-radius: 50%;
           overflow: hidden;
@@ -304,9 +393,12 @@
       height: 56px;
       background-color: lighten($color-dark, 86);
       border-radius: 8px;
+      @include media(1400, 1699) {
+        max-width: 100%;
+      }
       .vmn_text {
         gap: 8px;
-        color: $color-dark;
+        color: $color-primary;
       }
       .ResponseRate {
         margin-top: -2px;

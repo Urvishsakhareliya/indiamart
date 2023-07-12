@@ -118,7 +118,7 @@ a {
 }
 
 .container {
-  margin: 0 80px;
+  margin: 0 70px;
 }
 
 .img-fluid {
@@ -200,7 +200,7 @@ a {
 
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   .container {
-    margin: 0 70px;
+    margin: 0 60px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -208,7 +208,7 @@ a {
     font-size: 14px;
   }
   .container {
-    margin: 0 50px;
+    margin: 0 40px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -216,7 +216,15 @@ a {
     font-size: 14px;
   }
   .container {
-    margin: 0 30px;
+    margin: 0 15px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 991px) {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    margin: 0 10px;
   }
 }
 /* ---------- Header ---------- */
@@ -493,12 +501,30 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .productView {
   margin-bottom: 200px;
   display: grid;
-  grid-template-columns: 25% 50% auto;
+  grid-template-columns: 25% auto 25%;
   gap: 20px;
 }
-@media screen and (max-width: 1399px) {
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
   .productView {
-    gap: 16px;
+    grid-template-columns: 28% auto 28%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .productView {
+    grid-template-columns: 28% auto 28%;
+    gap: 14px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView {
+    grid-template-columns: 30% auto 28%;
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 991px) {
+  .productView {
+    grid-template-columns: 50% auto 28%;
+    gap: 8px;
   }
 }
 .productView .productImage .pro_image {
@@ -556,6 +582,16 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .productView .productImage .imageSlider .imageItem {
+    min-width: 22.2222222222%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productImage .imageSlider .imageItem {
+    min-width: 22.2222222222%;
+  }
+}
 .productView .productImage .imageSlider .imageItem.active {
   border-color: #ee6c4d;
 }
@@ -580,6 +616,16 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   font-size: 20px;
   margin-bottom: 4px;
 }
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .productView .productDetails .product_Name {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productDetails .product_Name {
+    font-size: 16px;
+  }
+}
 .productView .productDetails .price_glp {
   margin-bottom: 10px;
   gap: 10px;
@@ -590,6 +636,16 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   color: #141a23;
   font-size: 26px;
   transition: 0.3s;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .productView .productDetails .price_glp .product_price {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productDetails .price_glp .product_price {
+    font-size: 20px;
+  }
 }
 .productView .productDetails .price_glp .product_price:hover {
   color: #ea4923;
@@ -603,6 +659,16 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   font-size: 18px;
   color: #ee6c4d;
   font-weight: 500;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .productView .productDetails .price_glp .latest_price {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productDetails .price_glp .latest_price {
+    font-size: 14px;
+  }
 }
 .productView .productDetails .price_glp .latest_price:hover {
   color: #003376;
@@ -620,6 +686,12 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .productView .productDetails .pro_description .pro_desc_Table table th,
 .productView .productDetails .pro_description .pro_desc_Table table td {
   padding: 8px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productDetails .pro_description .pro_desc_Table table th,
+  .productView .productDetails .pro_description .pro_desc_Table table td {
+    padding: 4px 6px;
+  }
 }
 .productView .productDetails .pro_description .pro_desc_Table table tr {
   border-top: 1px solid #b1b1b1;
@@ -663,12 +735,28 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   overflow: hidden;
   transition: 0.5s;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productDetails .pro_description .get_latest_price button {
+    padding: 10px 20px;
+    width: 250px;
+  }
+}
 .productView .productDetails .pro_description .get_latest_price button p {
   font-weight: 600;
   font-size: 20px;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productDetails .pro_description .get_latest_price button p {
+    font-size: 18px;
+  }
+}
 .productView .productDetails .pro_description .get_latest_price button span {
   font-size: 14px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .productDetails .pro_description .get_latest_price button span {
+    font-size: 12px;
+  }
 }
 .productView .productDetails .pro_description .get_latest_price button::after {
   content: "";
@@ -695,11 +783,33 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   padding: 10px;
   border-radius: 8px;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .Company_card {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
 .productView .product_Company_card .Company_card .hrLine {
   height: 1px;
   width: 100%;
   background-color: #acacac;
   margin: 15px 0;
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .productView .product_Company_card .Company_card .hrLine {
+    height: 1px;
+    width: 100%;
+    background-color: #acacac;
+    margin: 12px 0;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .Company_card .hrLine {
+    height: 1px;
+    width: 100%;
+    background-color: #acacac;
+    margin: 12px 0;
+  }
 }
 .productView .product_Company_card .Company_card .company_name {
   color: #141a23;
@@ -707,6 +817,18 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .productView .product_Company_card .Company_card .logo_Address {
   grid-template-columns: 100px auto;
   gap: 14px;
+}
+@media screen and (min-width: 1200px) and (max-width: 1699px) {
+  .productView .product_Company_card .Company_card .logo_Address {
+    grid-template-columns: 80px auto;
+    gap: 12px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .Company_card .logo_Address {
+    grid-template-columns: 70px auto;
+    gap: 8px;
+  }
 }
 .productView .product_Company_card .Company_card .logo_Address .logo_div {
   padding: 5px;
@@ -731,8 +853,18 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .Address, .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .gst {
+    font-size: 12px;
+  }
+}
 .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star {
   gap: 10px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star {
+    gap: 6px;
+  }
 }
 .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star .rate {
   color: #141a23;
@@ -742,9 +874,19 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   color: #646464;
   font-size: 16px;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star .rate:after {
+    font-size: 12px;
+  }
+}
 .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star .star {
   font-size: 20px;
   color: #ee6c4d;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .Company_card .logo_Address .Address_rate_Gst .rate_star .star {
+    font-size: 16px;
+  }
 }
 .productView .product_Company_card .company_tags {
   flex-wrap: wrap;
@@ -756,11 +898,24 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   gap: 10px;
   align-items: center;
 }
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .productView .product_Company_card .company_tags .tag_item {
+    grid-template-columns: 16px auto;
+    gap: 6px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .productView .product_Company_card .company_tags .tag_item {
+    grid-template-columns: 16px auto;
+    gap: 4px;
+    font-size: 12px;
+  }
+}
 .productView .product_Company_card .company_tags .tag_item .icon {
   border-radius: 50%;
   overflow: hidden;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
 }
 .productView .product_Company_card .company_tags .tag_item .icon img {
   width: 100%;
@@ -775,9 +930,14 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   background-color: #f5f6f9;
   border-radius: 8px;
 }
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .productView .product_Company_card .View_mobile_number {
+    max-width: 100%;
+  }
+}
 .productView .product_Company_card .View_mobile_number .vmn_text {
   gap: 8px;
-  color: #141a23;
+  color: #003376;
 }
 .productView .product_Company_card .View_mobile_number .ResponseRate {
   margin-top: -2px;
