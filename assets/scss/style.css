@@ -501,12 +501,13 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .productView {
   margin-bottom: 200px;
   display: grid;
-  grid-template-columns: 25% auto 25%;
+  grid-template-columns: 30% auto 22%;
   gap: 20px;
 }
 @media screen and (min-width: 1400px) and (max-width: 1699px) {
   .productView {
-    grid-template-columns: 28% auto 28%;
+    grid-template-columns: 30% auto 25%;
+    gap: 16px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -893,20 +894,23 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   gap: 8px 0;
 }
 .productView .product_Company_card .company_tags .tag_item {
-  min-width: 49%;
-  grid-template-columns: 20px auto;
   gap: 10px;
+  min-width: 49%;
   align-items: center;
+  grid-template-columns: 16px auto;
+}
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+  .productView .product_Company_card .company_tags .tag_item {
+    gap: 6px;
+  }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .productView .product_Company_card .company_tags .tag_item {
-    grid-template-columns: 16px auto;
     gap: 6px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .productView .product_Company_card .company_tags .tag_item {
-    grid-template-columns: 16px auto;
     gap: 4px;
     font-size: 12px;
   }
@@ -941,6 +945,10 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 }
 .productView .product_Company_card .View_mobile_number .ResponseRate {
   margin-top: -2px;
+}
+.productView .product_Company_card .Contact_Supplier {
+  margin-top: 10px;
+  gap: 8px;
 }
 
 /* ================ Page Css ================ */

@@ -5,10 +5,11 @@
 .productView {
   margin-bottom: 200px;
   display: grid;
-  grid-template-columns: 25% auto 25%;
+  grid-template-columns: 30% auto 22%;
   gap: 20px;
   @include media(1400, 1699) {
-    grid-template-columns: 28% auto 28%;
+    grid-template-columns: 30% auto 25%;
+    gap: 16px;
   }
   @include media(1200, 1399) {
     grid-template-columns: 28% auto 28%;
@@ -358,21 +359,23 @@
       gap: 8px 0;
       .tag_item {
         $width: 20px;
-        min-width: 49%;
-        grid-template-columns: $width auto;
         gap: 10px;
+        min-width: 49%;
         align-items: center;
+        @include media(1400, 1699) {
+          $width: 16px;
+          gap: 6px;
+        }
         @include media(1200, 1399) {
           $width: 16px;
-          grid-template-columns: $width auto;
           gap: 6px;
         }
         @include media(992, 1199) {
           $width: 16px;
-          grid-template-columns: $width auto;
           gap: 4px;
           font-size: 12px;
         }
+        grid-template-columns: $width auto;
         .icon {
           border-radius: 50%;
           overflow: hidden;
@@ -403,6 +406,10 @@
       .ResponseRate {
         margin-top: -2px;
       }
+    }
+    .Contact_Supplier {
+      margin-top: 10px;
+      gap: 8px;
     }
   }
 }
