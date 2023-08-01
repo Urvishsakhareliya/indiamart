@@ -545,7 +545,7 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
   border-radius: 8px;
   border: 1px solid #acacac;
   aspect-ratio: 1;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -554,6 +554,8 @@ header .top-header .nav-ul .right-ul .nav .nav-link:hover::after {
 .productView .productImage .mainImage #ProductMainImage {
   position: relative;
   z-index: 1;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .productView .productImage .mainImage .fix-image {
   position: absolute;
